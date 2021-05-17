@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+* {
+	margin:0;
+	padding:0;
+	font-family:Verdana, Geneva, sans-serif;
+}
+body{
+	font-size: 100%;
+}
+p {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-right: 10px;
+	text-align: justify;
+}
+
+/* Wrapper */
+#wrapper {
+	width: 800px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:10px;
+	border: 2px solid rgba(0,0,0,0.8);	
+}
+/* End wrapper */
+
+/* Header */
+header {
+	text-align:center;
+	height: 60px;
+	background-image: url("../bilder/bgImg.png");
+	
+	color: white;
+}
+header h1{
+	font-family: Arial;
+	font-size: 1.9em;
+	padding-top: 0.25em;
+}
+
+header time{
+	float: right;
+	margin-right: 2em;
+	font-size: 0.8em;
+}
+/* End header */
+
+nav{
+	border-radius: 5px;	/* CSS3 */	
+	border: 1px solid #999;
+	padding: 4px;
+	margin-bottom:5px;
+}
+nav ul {
+	list-style:none;
+}
+nav li{
+	margin-top: 5px;
+	border: 1px solid #000;
+}
+nav li a{
+  display:block;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #aa0000;
+  padding-left: 15px;
+  background-color:#FFC;
+}
+nav li a:hover, #leftColumn li a:active, #leftColumn li a:focus{
+	background-color: gray;
+  	color: #ffffff;
+}
+
+aside {
+	-moz-border-radius: 5px;	/* Ger rundade hörn i Firefox */
+	border-radius: 5px;	/* CSS3 */	
+	border: 1px solid #999;
+	padding: 4px;
+	margin-bottom:5px;
+}
+
+aside p {
+	font-size: 0.8em;
+}
+
+/* leftColumn */
+#leftColumn {
+	float: left;
+	width: 180px;
+	margin: 8px;
+}
+
+#leftColumn h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+/* End leftColumn */
+/* Main */
+main {
+	margin-top: 8px;
+	margin-left:200px;
+}
+main h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+}
+main h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+main section{
+	float:right;
+	width: 99%;
+}
+
+form label,a{
+	font-size: 0.8em;
+}
+/* End content */
+/* Footer */
+footer {
+	height: 30px;
+	background-image: url("../bilder/bgImg.png");
+	color: white;
+	font-size: 0.75em;
+	clear:both;
+}
+footer #footerRight{
+	float:right;
+	padding: 5px;
+}
+footer #footerLeft{
+	float:left;
+	padding: 5px;
+}
+/* End footer */
