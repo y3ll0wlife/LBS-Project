@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="sv">
+    <meta charset="utf-8">
+    <title>ValutaConverterare</title>
+    <script src = 'ajaj.js'></script>
+    <style type="text/css">
+        h1 {
+            font-family: verdana;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Valutaomvandlared</h1>
+
+    <form name="currencyForm">
+        <label>Belopp: </label>
+        <input type="text" id="valueSEK" placeholder="Belopp">
+        
+        <label>Valuta: </label>
+        
+        <input list="currencyList"id = 'currency' placeholder="Valuta">
+        <datalist id="currencyList"></datalist>
+        <input type="button" id="calcButton" value="Konvertera till kr">
+    </form>
+    <p id = "result">Beräknat belopp</p>
+</body>
+</html>
