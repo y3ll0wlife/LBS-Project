@@ -1,0 +1,37 @@
+https://www.w3schools.com/graphics/game_images.asp
+
+21-11-2019
+idag började vi jobba på spelet. vi började med att läsa projektbeskrivningen som skickades igenom google drive
+sedan gick vi igenom hela koden för att bekanta oss med den. Därefter diskuterade vi om vilken riktning vi ville ta spelet till
+efter det gjorde vi en lista på allt vi ville göra med spelet. Snabbt efter började vi på mockup. 
+
+  TODO
+- Styla grejen ✔️
+- Restart btn ✔️
+- Play WASD ✔️
+- Larger btn ❌
+- Bigger screen ✔️
+- How to play the game ✔️
+- Background ✔️
+- Ny gamepeice (bild på flappy bird)✔️
+- No buttons✔️
+- Instruktioner✔️
+- slides (så man skan göra ett coustom game)✔️
+- Roliga knappar som gör t.ex. inverted controls eller slimjim ;) ✔️
+
+vi började ganska sen på lektionen så allt vi hann göra för denna lektionen var att styla den och lägga in en Restart knapp.
+
+28-11-2019
+idag började vi lektionen med att ta en varsin del av spelet och styla den med hjälp av visionen / listan vi hade gjort lektionen
+innan. I stylingen så tog vi bort knapparna för att röra sig och lade in Instruktioner på den platsen istället.
+vi testade olika sätt att lägga in bilder och skapa en gameborder men det gick inte bra så vi skapade features så man kan 
+coustomizea spelet med slides och on/of swiches. vi plaserade också om scoreboarden, ändrade färg på den och gjorde så att när
+man dör så visar spelet upp scoren som man dog med.
+
+05-12-2019
+idag så har vi våran presentation och vi var inte klara när lektionen hade börjat. så idag skulle vi bli klara.
+spelet var inte direkt estitiskt attraktiv så vi bestämde oss för att göra den det. vi lade in en Bakgrund, bytte figuren så 
+man spelar med till en flappybird så att det inte bara var en röd kvadrat och gjorde om obstaclen till en pipe  så att det inte bara var en gröna rektanglar till grön
+och lime färade rektaglar som ser bra ut.
+
+post-presentation

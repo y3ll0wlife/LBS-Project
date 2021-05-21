@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: #F2F3F5;
+    background: #F2F3F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.notActive {
+    padding: 20px 100px 20px 100px;
+    margin-left: 50px;
+    background: #093EA5;
+    border: 1px solid black;
+   
+}
+
+.active {
+    margin-left: 50px;
+    padding: 20px 100px 20px 100px;
+    background: #00308F;
+    border: 1px solid black;
+   
+}
+
+.notActive:hover,
+.active:hover {
+    background: #00308F;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    padding: 5px 50.5px 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+    color: #001440;
+    
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    color: #001440;
+    
+}
+
+.tg .tg-hmp3 {
+   
+    text-align: left;
+    vertical-align: top
+}
+
+.tg .tg-baqh {
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-mb3i {
+    
+    text-align: right;
+    vertical-align: top
+}
+
+.tg .tg-lqy6 {
+    text-align: right;
+    vertical-align: top;
+}
+.tg-lqy6:hover{
+    background-color: rgb(78, 117, 194);
+}
+
+.tg .tg-0lax {
+    text-align: left;
+    vertical-align: top
+}
+
+#title{
+    margin: 10px 0px 10px 20px;
+    font-size: 50px;
+    color: #001440;
+}
+
+.text{
+    font-size: 20px;
+    color: #001440;
+    margin: 30px 20px 20px 20px;
+}
+b{
+    font-size: 25px;
+    color: #001440;
+    margin-top: 30px;
+}
+
+.img{
+    margin-left: 20px;
+    width: 50px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.info{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #001440;
+}

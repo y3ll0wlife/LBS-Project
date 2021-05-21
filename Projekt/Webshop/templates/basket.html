@@ -1,0 +1,102 @@
+{% extends "base.html"%} {% block title %}Basket{% endblock %} {% block content %}
+  
+<br>
+<h1>You currently have <strong>{{basketLen}}</strong> melon(s) in the basket</h1>
+<h2>Current total price: <strong>{{totalPrice}}</strong> sek </h2>
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+  Checkout
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Checkout the melons</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form accept-charset="UTF-8" action="/basket/order/" method="POST"  enctype="multipart/form-data">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">First Name</label>
+              <input type="text" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Last Name</label>
+              <input type="text" class="form-control" id="inputPassword4" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <input type="text" class="form-control" id="inputZip" required>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" required>
+            </div>
+          </div>
+          <div class="form-group">
+              <h3>Total price is {{totalPrice}} sek</h3>
+          </div>
+          
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-info">Send order</button>
+      </div></form>
+    </div>
+  </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Item</th>
+        <th scope="col">Price</th>
+        <th scope="col">Remove</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+
+     {%for i in range(0, basketLen)%}
+     <tr>
+        <td><img src="{{bIcon[i]}}" alt="Icon" style="width: 20%; border-radius: 50%;"></td>
+        <td>{{bName[i]}}</td>
+        <td>{{bPrice[i]}} sek</td>
+        <form accept-charset="UTF-8" action="/basket/remove/{{bId[i]}}" method="POST"  enctype="multipart/form-data">
+          <td><button type="submit" class="btn btn-danger mb-2">X</button></td>
+        </form>
+    </tr>
+     {%endfor%}
+
+    
+    </tbody>
+</table>
+
+</div>
+
+
+{% endblock %}

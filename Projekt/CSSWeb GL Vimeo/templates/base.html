@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/static/icons/icon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="/static/styles/main.css" />
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Simpeo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/list">All vidoes</a>
+
+          {% if "user" in session %}
+          <a class="nav-item nav-link" href="/upload">Upload</a>
+          <a class="nav-item nav-link" href="/profile">My profile</a>
+          <a class="nav-item nav-link" href="/signout">Sign out</a>
+          {% else %}
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/signup">Signup</a>
+          {% endif %}
+
+          <form class="form-inline" accept-charset="UTF-8" action="/" method="POST" enctype="multipart/form-data">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="videoNameSearch" id="videoName" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for msg in messages %}
+
+    <div class="toast" data-autohide="false">
+      <div class="toast-header">
+        <img src="/static/icons/icon.png" style="height: 25px; width: 25px;" class="rounded mr-2" alt="..." />
+        <strong class="mr-auto"><i class="fa fa-grav"></i>Information</strong>
+
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        <h5>{{msg}}</h5>
+      </div>
+    </div>
+
+    {% endfor %} {% endif %} {% endwith %}
+    <div class="container">
+      {% block content %} {% endblock %}
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="/static/icons/icon.png" alt="" width="24" height="24" />
+            <small class="d-block mb-3 text-muted">© 2020</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">We're no strangers to love</a></li>
+              <li><a class="text-muted" href="#">You know the rules and so do I</a></li>
+              <li><a class="text-muted" href="#">A full commitment's what I'm thinking of</a></li>
+              <li><a class="text-muted" href="#">You wouldn't get this from any other guy</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">I just wanna tell you how I'm feeling</a></li>
+              <li><a class="text-muted" href="#">Gotta make you understand</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Never gonna give you up</a></li>
+              <li><a class="text-muted" href="#">Never gonna let you down</a></li>
+              <li><a class="text-muted" href="#">Never gonna run around and desert you</a></li>
+              <li><a class="text-muted" href="#">Never gonna make you cry</a></li>
+              <li><a class="text-muted" href="#">Never gonna say goodbye</a></li>
+              <li><a class="text-muted" href="#">Never gonna tell a lie and hurt you</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>I give up</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">We've known each other for so long</a></li>
+              <li><a class="text-muted" href="#">Your heart's been aching but you're too shy to say it</a></li>
+              <li><a class="text-muted" href="#">Inside we both know what's been going on</a></li>
+              <li><a class="text-muted" href="#">We know the game and we're gonna play it</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".toast").toast("show");
+      });
+    </script>
+  </body>
+</html>

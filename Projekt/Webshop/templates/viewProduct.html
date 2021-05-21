@@ -1,0 +1,22 @@
+{% extends "base.html"%} {% block title %}Product{% endblock %} {% block content %}
+
+<br />
+<div class="text-center">
+  <h1><strong>{{name}}</strong></h1>
+  <h4>{{desc}}</h4>
+  <br />
+  <img src="../{{img}}" alt="Image of {{name}}" style="width: 30%; height: auto" />
+  <br />
+  <br />
+  <br />
+  <div style="padding: 10px">
+    <h5>Price: <strong>{{price}}</strong> sek</h5>
+    <form accept-charset="UTF-8" action="/../basket/add/{{id}}" method="POST" enctype="multipart/form-data">
+      <button type="submit" class="btn btn-success">Add to cart</button>
+    </form>
+  </div>
+</div>
+
+<br />
+
+{% endblock %}

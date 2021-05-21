@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body onload="startGame()">
+    <div class="movement" style="text-align:center;width:480px;"></div>
+
+    <p>The score will count one point for each frame you manage to "stay alive". Use "WASD" to move.</p>
+    <button id="restart" type="button" onclick="restartGame()">Restart</button>
+    <h1 id="score">;)</h1>
+    <div class="slidecontainer">
+      <div>
+        <p>↑ Speed up: <span id="valueUp"></span></p>
+        <input type="range" min="1" max="100" value="10" class="slider" id="rangeUp" />
+
+        <p>↓ Speed down: <span id="valueDown"></span></p>
+        <input type="range" min="1" max="100" value="10" class="slider" id="rangeDown" />
+      </div>
+      <div>
+        <p>← Speed left: <span id="valueLeft"></span></p>
+        <input type="range" min="1" max="100" value="10" class="slider" id="rangeLeft" />
+
+        <p>→ Speed right: <span id="valueRight"></span></p>
+        <input type="range" min="1" max="100" value="10" class="slider" id="rangeRight" />
+      </div>
+      <div>
+        <p>Min gap: <span id="valueMin"></span></p>
+        <input type="range" min="1" max="200" value="110" class="slider" id="rangeMin" />
+
+        <p>Max gap: <span id="valueMax"></span></p>
+        <input type="range" min="1" max="200" value="170" class="slider" id="rangeMax" />
+      </div>
+    </div>
+    <div id="game-area" class="snake-game-container" tabindex="0"></div>
+    <div class="toggles">
+      <input type="checkbox" value="invisPipes" id="invisPipes" />Invisible pipes <br />
+      <input type="checkbox" value="invertedControls" id="inverted" />Inverted controls<br />
+      <input type="checkbox" value="ramdoizeControls" id="randomize" />Randomize controls <br />
+      <input type="checkbox" value="slimJim" id="slimJim" />Slim Jim ;)<br />
+    </div>
+    <script>
+      update("rangeUp", "valueUp");
+      update("rangeDown", "valueDown");
+      update("rangeLeft", "valueLeft");
+      update("rangeRight", "valueRight");
+
+      update("rangeMin", "valueMin");
+      update("rangeMax", "valueMax");
+
+      function update(s, o) {
+        var slider = document.getElementById(s);
+        var output = document.getElementById(o);
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        };
+      }
+    </script>
+  </body>
+</html>
+
+<!--
+  TODO
+- Styla grejen ✔️
+- Restart btn ✔️
+- Play WASD ✔️
+- Larger btn ❌
+- Bigger screen ✔️
+- How to play the game  ✔️
+- Background ✔️
+- Ny gamepeice (bild på flappy bird)✔️
+- No buttons✔️
+- Instruktioner✔️
+- slides (så man skan göra ett coustom game)✔️
+- Roliga knappar som gör t.ex. inverted controls eller slimjim ;) ✔️
+-->

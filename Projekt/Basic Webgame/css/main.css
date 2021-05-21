@@ -1,0 +1,36 @@
+canvas {
+  border: 1px solid #d3d3d3;
+  background-color: #f1f1f1;
+  width: 60%;
+  height: 50%;
+}
+#canvasID {
+  position: absolute;
+}
+#restart {
+  padding: 10px;
+  margin-left: 400px;
+  margin-top: -370px;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  display: block;
+}
+#score {
+  padding: 10px;
+  margin-left: 340px;
+  margin-top: -450px;
+  color: black;
+  position: absolute;
+  display: block;
+}
+.slidecontainer {
+  margin-top: -40%;
+  float: right;
+  display: flex;
+}
+.toggles {
+  margin-top: -27%;
+  margin-right: 10%;
+  float: right;
+}

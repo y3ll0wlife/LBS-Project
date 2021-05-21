@@ -1,0 +1,25 @@
+2019-26-9
+- Jag gjorde klart markupen
+- Klar med designen
+- Började med att lägga ut elementen på hemsidan
+
+2019-03-10
+- Klar med CSS
+- Klar med HTML
+- Klar med hemsidan
+
+Vad jag är nöjd med?
+- Tablerna för att de blev som jag ville och var inte allt för svåra att göra och ändra i vilket gör det lättare att
+lägga till fler rader på den om det skulle behövas
+
+- Även så tyckte jag att CSS blev bra, jag hade inga större problem med att visa element inte ville göra som jag ville
+samt blev sidan lite responsive
+
+- Jag är även nöjd över färgerna dem passade bra tillsammans
+
+Mindre nöjd med?
+-  Navigeringen blev lite sämre tycker jag lite klumbig
+
+- FÖRR FÅ BILDER jag gillar BILDER
+
+- Ikonerna är inte samma färg

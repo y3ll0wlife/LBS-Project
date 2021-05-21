@@ -1,0 +1,10 @@
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\bin\Debug\maze-solver.exe.config
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\bin\Debug\maze-solver.exe
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\bin\Debug\maze-solver.pdb
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\obj\Debug\maze-solver.csprojAssemblyReference.cache
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\obj\Debug\maze_solver.Form1.resources
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\obj\Debug\maze_solver.Properties.Resources.resources
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\obj\Debug\maze-solver.csproj.GenerateResource.cache
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\obj\Debug\maze-solver.csproj.CoreCompileInputs.cache
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\obj\Debug\maze-solver.exe
+D:\LBS\LBS-Project\Projekt\maze-solver\maze-solver\obj\Debug\maze-solver.pdb

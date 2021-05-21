@@ -1,0 +1,75 @@
+{% extends "base.html"%} {% block title %}Home page{% endblock %} {% block content %}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <img src="/static/icons/icon.png" class="logo" />
+  <h1 class="display-4">Make an impact with video.</h1>
+  <p class="lead">Create high-performing videos, collaborate with your team, and share anywhere.</p>
+  <a class="btn btn-outline-dark btn-lg" href="/signup">Join for free</a> <br />
+  <br />
+  <br />
+</div>
+
+<div class="card-deck mb-3 text-center">
+  <div id="stupid3dmodels"></div>
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa alias aspernatur tempora commodi rem sint? Eligendi eveniet voluptas labore placeat in ab accusamus deserunt incidunt temporibus, fuga eius, maiores nostrum hic consectetur omnis
+  possimus corrupti reiciendis rerum provident modi neque assumenda? Praesentium ab nesciunt dicta, fugit aperiam laudantium sed eligendi illum omnis amet itaque iure perspiciatis? Provident quo blanditiis neque iusto sed. Ea harum quisquam sapiente
+  iusto! Enim, eum? Quisquam ad, cumque sequi dolor perferendis eos sunt assumenda a dolores nisi aut consequuntur! Necessitatibus maxime consectetur, dolor eius modi omnis placeat quod beatae odio fugit sint corporis cupiditate aliquid totam!
+</div>
+
+<div class="card-deck mb-3 text-center">
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Free</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">FREE</h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>1 video (or 5 gb)</li>
+        <li>Access to the forums</li>
+        <li>Email support</li>
+        <li>Help center access</li>
+      </ul>
+      <a href="/signup"> <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button></a>
+    </div>
+  </div>
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Pro</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">15 toilet papers<small class="text-muted">/ mo</small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>5 gb of videos/week</li>
+        <li>250gb every year</li>
+        <li>Priority email support</li>
+        <li>Help center access</li>
+      </ul>
+      <a href="/signup"> <button type="button" class="btn btn-lg btn-block btn-success">Start free trial</button></a>
+      <p class="lead">or <a href="/purchase">purchase now</a></p>
+    </div>
+  </div>
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Business</h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title">59 toilet papers<small class="text-muted">/ mo</small></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>No weekly limits</li>
+        <li>10 tb every year</li>
+        <li>Phone and email support</li>
+        <li>Help center access</li>
+      </ul>
+      <a href="/signup"> <button type="button" class="btn btn-lg btn-block btn-primary">Start free trial</button></a>
+      <p class="lead">or <a href="/purchase">purchase now</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/three.js"></script>
+<!-- Och script.js -->
+<script src="/static/js/3dmodels.js"></script>
+<!-- Länkar three.js filen (detta är något som är tvingat för att köra three js modulen-->
+
+{% endblock %}

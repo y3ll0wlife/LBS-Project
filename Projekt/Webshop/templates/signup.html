@@ -1,0 +1,27 @@
+{% extends "base.html"%} {% block title %}Sign up{% endblock %} {% block content %}
+    <div class="col-md-6 offset-md-3 mt-5">
+        <br>
+        <h1>Welcome to the future</h1>
+        <form accept-charset="UTF-8" action="#" method="POST"  enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="urs" class="form-control" id="username" placeholder="Your username" required="required">
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="psw" class="form-control" id="password" placeholder="Your very secret password"  required="required">
+          </div>
+          <div class="form-group">
+            <label for="passwordConf">Confirm your password</label>
+            <input type="password" name="pswConfirm" class="form-control" id="passwordConf" placeholder="Please type your password one more time"  required="required">
+          </div>
+          <button type="submit" class="btn btn-success">Create account</button>
+          <a href="/login">  <h4 class="btn">Or log in</h4></a>
+        </form>
+</form>
+<br>
+</div>
+
+
+{% endblock %}

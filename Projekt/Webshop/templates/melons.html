@@ -1,0 +1,26 @@
+{% extends "base.html"%} {% block title %}Melons{% endblock %} {% block content %}
+<br class="mt-5" />
+
+<div class="row row-cols-1 row-cols-md-3">
+  {% for p in products %}
+
+  <div class="col mb-4">
+    <div class="card">
+      <img src="/{{p.itemImagePath}}" class="card-img-top" alt="{{p.itemName}} Image" style="height: 300px; width: 200px; margin-left: auto; margin-right: auto" />
+      <div class="card-body">
+        <h5 class="card-title"><strong>{{p.itemName}}</strong></h5>
+        <p class="card-text">{{p.itemDescription}}</p>
+        <p>Price SEK: <strong>{{p.itemPrice}}</strong></p>
+      </div>
+      <div class="card-footer">
+        <form accept-charset="UTF-8" action="/basket/add/{{p._id}}" method="POST" enctype="multipart/form-data">
+          <button type="submit" class="btn btn-success">Add to cart</button>
+          <a href="/view/{{p._id}}" class="btn btn-info">View product</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+{% endblock %}

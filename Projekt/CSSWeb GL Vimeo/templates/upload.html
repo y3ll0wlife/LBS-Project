@@ -1,0 +1,33 @@
+{% extends "base.html"%} {% block title %}Upload Video{% endblock %} {% block content %}
+    <div class="col-md-6 offset-md-3 mt-5">
+        <br>
+        <h1>Upload a video now</h1>
+        <form accept-charset="UTF-8" action="#" method="POST"  enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="videoName">Video Name</label>
+            <input type="text" name="vidName" class="form-control" id="videoName" placeholder="Make it quick and something that people will remember" required="required">
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="description">Video description</label>
+            <input type="text" name="vidDesc" class="form-control" id="description" placeholder="Explain what your video is about">
+          </div>
+    
+          <hr>
+          <div class="form-group mt-3">
+            <label class="mr-2">The video (mp4 only):</label>
+            <input type="file" name="inputFile" required="required">
+          </div>
+          <div class="form-group mt-3">
+            <label class="mr-2">A video thumbnail:</label>
+            <input type="file" name="thumbnail">
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+</form>
+<br>
+</div>
+
+
+{% endblock %}

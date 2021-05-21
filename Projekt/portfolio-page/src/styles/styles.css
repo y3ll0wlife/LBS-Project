@@ -1,0 +1,42 @@
+.my-avatar {
+	border-radius: 50%;
+}
+
+.title {
+	color: #e31b6d;
+}
+
+.center-full {
+	left: 0;
+	line-height: 200px;
+	margin-top: -100px;
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	width: 100%;
+}
+
+.button-homepage {
+	padding: 10px 20px 10px 20px;
+	background-color: transparent;
+	border: white 1px solid;
+}
+.button-homepage:hover,
+.button-homepage:focus {
+	background-color: white;
+	color: #222222;
+	outline: none !important;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.project-logo {
+	width: 10rem;
+	height: auto;
+}
+.contact-logo {
+	width: 5rem;
+	height: auto;
+	margin-right: 40px;
+}

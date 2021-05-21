@@ -1,0 +1,30 @@
+{% extends "base.html"%} {% block title %}Sign up{% endblock %} {% block content %}
+<div class="col-md-6 offset-md-3 mt-5">
+  <br />
+  <h1>Welcome <b>{{username}}</b></h1>
+  <br />
+</div>
+
+<ul class="list-unstyled">
+  <h4>My videos</h4>
+  {% for item in values %}
+
+  <li class="media">
+    <a href="/videoPlayer/{{item.videoUUID}}">
+      <img src="/{{item.thumbnailPATH}}" class="mr-3" alt="THUMBNAIL" style="height: 100px; width: 100px;" />
+    </a>
+
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><strong>{{item.videoName}}</strong></h5>
+      {{item.videoDesc}} <br />
+      {{item.uploadTime}}
+    </div>
+  </li>
+  <br />
+
+  {% endfor %}
+</ul>
+
+<br />
+
+{% endblock %}

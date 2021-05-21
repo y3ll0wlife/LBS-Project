@@ -1,0 +1,6 @@
+D:\LBS\LBS-Project\Programmering\Inkapsling och polymorfism - Del 1\Uppgift 3\Uppgift 3\bin\Debug\Uppgift 3.exe.config
+D:\LBS\LBS-Project\Programmering\Inkapsling och polymorfism - Del 1\Uppgift 3\Uppgift 3\bin\Debug\Uppgift 3.exe
+D:\LBS\LBS-Project\Programmering\Inkapsling och polymorfism - Del 1\Uppgift 3\Uppgift 3\bin\Debug\Uppgift 3.pdb
+D:\LBS\LBS-Project\Programmering\Inkapsling och polymorfism - Del 1\Uppgift 3\Uppgift 3\obj\Debug\Uppgift 3.csproj.CoreCompileInputs.cache
+D:\LBS\LBS-Project\Programmering\Inkapsling och polymorfism - Del 1\Uppgift 3\Uppgift 3\obj\Debug\Uppgift 3.exe
+D:\LBS\LBS-Project\Programmering\Inkapsling och polymorfism - Del 1\Uppgift 3\Uppgift 3\obj\Debug\Uppgift 3.pdb

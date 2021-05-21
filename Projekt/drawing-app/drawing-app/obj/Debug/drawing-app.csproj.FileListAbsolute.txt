@@ -1,0 +1,10 @@
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\bin\Debug\drawing-app.exe.config
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\bin\Debug\drawing-app.exe
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\bin\Debug\drawing-app.pdb
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\obj\Debug\drawing-app.csprojAssemblyReference.cache
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\obj\Debug\drawing_app.Properties.Resources.resources
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\obj\Debug\drawing-app.csproj.GenerateResource.cache
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\obj\Debug\drawing-app.csproj.CoreCompileInputs.cache
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\obj\Debug\drawing-app.exe
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\obj\Debug\drawing-app.pdb
+D:\LBS\LBS-Project\Projekt\drawing-app\drawing-app\obj\Debug\drawing_app.Config.resources
